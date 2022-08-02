@@ -17,6 +17,10 @@ footer {
 
 }
 
+.nav-item a:hover {
+    color: #04C4D9 !important;
+}
+
 .custom-toggler.navbar-toggler {
     border-color: white;
 }
@@ -45,4 +49,9 @@ footer {
 
 .card p {
     margin: 0;
+}
+
+.card h4 {
+    color: #0dab01;
+    margin-top: .6rem;
 }
