@@ -78,28 +78,41 @@
             <h2 class="text-center">Formulario de contacto</h2>
           </legend>
           <!-- Nombre -->
-          <div>
+          <div class="form-floating">
+            <input
+              class="form-control"
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre"
+            />
             <label class="form-label" for="nombre">Nombre</label>
-            <input class="form-control" type="text" name="nombre" id="nombre" />
           </div>
 
           <!-- Email -->
-          <div>
+          <div class="form-floating">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email"
+            />
             <label class="form-label" for="email">Email de contacto</label>
-            <input class="form-control" type="email" name="email" id="email" />
           </div>
 
           <!-- Telefono -->
-          <div>
-            <label class="form-label" for="telefono"
-              >Teléfono de contacto</label
-            >
+          <div class="form-floating">
             <input
               class="form-control"
               type="tel"
               name="telefono"
               id="telefono"
+              placeholder="telefono"
             />
+            <label class="form-label" for="telefono"
+              >Teléfono de contacto</label
+            >
           </div>
 
           <!-- Inicio selección tipo de contacto -->
@@ -154,8 +167,12 @@
             ></textarea>
           </div>
           <!-- Botón Enviar -->
-          <div>
-            <input class="btn btn-primary mt-3" type="submit" value="Enviar" />
+          <div class="d-flex justify-content-md-start justify-content-end">
+            <input
+              class="btn btn-primary col-sm-3 col-6"
+              type="submit"
+              value="Enviar"
+            />
           </div>
         </form>
       </div>

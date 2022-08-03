@@ -55,3 +55,19 @@ footer {
     color: #0dab01;
     margin-top: .6rem;
 }
+
+.form-control,
+.form-select {
+    border: none !important;
+    border-bottom: 0.1rem solid #b4b1db !important;
+    margin-bottom: 1rem !important;
+}
+
+.form-check-input {
+    border: 0.1rem solid #b4b1db !important;
+}
+
+textarea.form-control {
+    border: 0.1rem solid #b4b1db !important;
+
+}
