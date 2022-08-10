@@ -1,0 +1,13 @@
+$colorbtn: (
+  enviar: $colorh4,
+  borrar: red,
+  atras: $colorsecundario,
+);
+
+@each $funcion, $color in $colorbtn {
+  .btn--#{$funcion} {
+    background-color: $color !important;
+    color: white !important;
+    border: $color !important;
+  }
+}

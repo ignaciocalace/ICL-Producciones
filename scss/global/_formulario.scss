@@ -1,0 +1,11 @@
+.form-control,
+.form-select {
+  border: none !important;
+  border-bottom: 0.1rem solid $colorform !important;
+  margin-bottom: 1rem !important;
+}
+
+.form-check-input,
+textarea.form-control {
+  border: 0.1rem solid $colorform !important;
+}
