@@ -1,0 +1,12 @@
+@mixin config($maxwidth, $margin, $color, $margintop) {
+  img {
+    max-width: $maxwidth;
+  }
+  p {
+    margin: $margin 0;
+  }
+  h4 {
+    color: $color;
+    margin-top: $margintop;
+  }
+}

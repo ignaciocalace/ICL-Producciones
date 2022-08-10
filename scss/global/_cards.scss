@@ -1,0 +1,7 @@
+.card {
+  text-align: center;
+  border-radius: 1rem;
+  background-color: $colorcard;
+
+  @include config(100%, 1rem, $colorh4, 0.6rem);
+}

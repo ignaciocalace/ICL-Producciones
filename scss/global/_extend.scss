@@ -1,0 +1,19 @@
+.shadows {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.shadows--btn {
+  @extend .shadows;
+  &:hover {
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.shadows--card {
+  @extend .shadows;
+  &:hover {
+    box-shadow: 0 0.8rem 3rem 0 rgba(0, 0, 0, 0.4);
+  }
+}
