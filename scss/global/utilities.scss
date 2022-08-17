@@ -1,0 +1,62 @@
+.shadows {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+// extends
+
+.shadows--btn {
+  @extend .shadows;
+  &:hover {
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.shadows--card {
+  @extend .shadows;
+  &:hover {
+    box-shadow: 0 0.8rem 3rem 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+// mixins
+
+@mixin config($maxwidth, $margin, $color, $margintop) {
+  img {
+    max-width: $maxwidth;
+  }
+  p {
+    margin: $margin 0;
+  }
+  h4 {
+    color: $color;
+    margin-top: $margintop;
+  }
+}
+
+// Maps
+
+$tarjeta: (
+  centro: center,
+  borde: 1rem,
+  colorfondo: $colorcard,
+);
+
+$colorbtn: (
+  enviar: $colorh4,
+  borrar: red,
+  atras: $colorsecundario,
+);
+
+@each $funcion, $color in $colorbtn {
+  .btn--#{$funcion} {
+    background-color: $color;
+    border-radius: 2rem;
+    color: white;
+    border: $color;
+    transition: 0.5s;
+    &:hover {
+      background-color: $color;
+    }
+  }
+}
