@@ -1,28 +1,15 @@
-h1 {
+h2 {
   font-family: "ethnocentric";
+  font-size: 3vmax;
+  margin-bottom: 0rem;
 }
 
-.btn--enviar {
-  background-color: #0dab01 !important;
-  color: white !important;
-  border: #0dab01 !important;
-}
-
-.btn--borrar {
-  background-color: red !important;
-  color: white !important;
-  border: red !important;
-}
-
-.btn--atras {
-  background-color: #04c4d9 !important;
-  color: white !important;
-  border: #04c4d9 !important;
+h3 {
+  font-size: 2rem;
 }
 
 .shadows, .shadows--card, .shadows--btn {
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
-  border-radius: 2rem;
   transition: 0.3s;
 }
 
@@ -32,6 +19,39 @@ h1 {
 
 .shadows--card:hover {
   box-shadow: 0 0.8rem 3rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn--enviar {
+  background-color: #0dab01;
+  border-radius: 2rem;
+  color: white;
+  border: #0dab01;
+  transition: 0.5s;
+}
+.btn--enviar:hover {
+  background-color: #0dab01;
+}
+
+.btn--borrar {
+  background-color: red;
+  border-radius: 2rem;
+  color: white;
+  border: red;
+  transition: 0.5s;
+}
+.btn--borrar:hover {
+  background-color: red;
+}
+
+.btn--atras {
+  background-color: #04c4d9;
+  border-radius: 2rem;
+  color: white;
+  border: #04c4d9;
+  transition: 0.5s;
+}
+.btn--atras:hover {
+  background-color: #04c4d9;
 }
 
 header {
@@ -58,33 +78,43 @@ header {
 footer {
   background-color: #2c2955;
 }
+footer p {
+  font-size: 0.9rem;
+}
 
-.card {
+.card, .card--Nosotros {
   text-align: center;
   border-radius: 1rem;
   background-color: #f9f9f9;
 }
-.card img {
+.card:hover, .card--Nosotros:hover {
+  transform: scale(1.05);
+}
+.card img, .card--Nosotros img {
   max-width: 100%;
 }
-.card p {
+.card p, .card--Nosotros p {
   margin: 1rem 0;
 }
-.card h4 {
+.card h4, .card--Nosotros h4 {
   color: #0dab01;
   margin-top: 0.6rem;
 }
 
+.card--Nosotros:hover {
+  transform: none;
+}
+
 .form-control,
 .form-select {
-  border: none !important;
-  border-bottom: 0.1rem solid #b4b1db !important;
-  margin-bottom: 1rem !important;
+  border: none;
+  border-bottom: 0.1rem solid #b4b1db;
+  margin-bottom: 1rem;
 }
 
 .form-check-input,
 textarea.form-control {
-  border: 0.1rem solid #b4b1db !important;
+  border: 0.1rem solid #b4b1db;
 }
 
 /*# sourceMappingURL=style.css.map */

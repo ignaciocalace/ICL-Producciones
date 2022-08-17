@@ -1,7 +1,16 @@
 .card {
-  text-align: center;
-  border-radius: 1rem;
-  background-color: $colorcard;
-
+  text-align: map-get($tarjeta, centro);
+  border-radius: map-get($tarjeta, borde);
+  background-color: map-get($tarjeta, colorfondo);
+  &:hover {
+    transform: scale(1.05);
+  }
   @include config(100%, 1rem, $colorh4, 0.6rem);
+}
+
+.card--Nosotros {
+  @extend .card;
+  &:hover {
+    transform: none;
+  }
 }
