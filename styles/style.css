@@ -1,17 +1,120 @@
-/* Error: expected "{".
- *   ,
- * 4 | @import "global/mixins.scss";
- *   |                             ^
- *   '
- *   scss/style.scss 4:29  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 4 \2502  @import "global/mixins.scss";\a   \2502                              ^\a   \2575 \a   scss/style.scss 4:29  root stylesheet';
+h2 {
+  font-family: "ethnocentric";
+  font-size: 3vmax;
+  margin-bottom: 0rem;
 }
+
+h3 {
+  font-size: 2rem;
+}
+
+.shadows, .shadows--card, .shadows--btn {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.shadows--btn:hover {
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.shadows--card:hover {
+  box-shadow: 0 0.8rem 3rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn--enviar {
+  background-color: #0dab01;
+  border-radius: 2rem;
+  color: white;
+  border: #0dab01;
+  transition: 0.5s;
+}
+.btn--enviar:hover {
+  background-color: #0dab01;
+}
+
+.btn--borrar {
+  background-color: red;
+  border-radius: 2rem;
+  color: white;
+  border: red;
+  transition: 0.5s;
+}
+.btn--borrar:hover {
+  background-color: red;
+}
+
+.btn--atras {
+  background-color: #04c4d9;
+  border-radius: 2rem;
+  color: white;
+  border: #04c4d9;
+  transition: 0.5s;
+}
+.btn--atras:hover {
+  background-color: #04c4d9;
+}
+
+header {
+  background-color: #2c2955;
+}
+
+.navbar-brand img {
+  max-width: 25vh;
+}
+
+.nav-item a:hover {
+  color: #04c4d9 !important;
+}
+
+.navbar-toggler-icon {
+  border-color: white;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+footer {
+  background-color: #2c2955;
+}
+footer p {
+  font-size: 0.9rem;
+}
+
+.card, .card--Nosotros {
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #f9f9f9;
+}
+.card:hover, .card--Nosotros:hover {
+  transform: scale(1.05);
+}
+.card img, .card--Nosotros img {
+  max-width: 100%;
+}
+.card p, .card--Nosotros p {
+  margin: 1rem 0;
+}
+.card h4, .card--Nosotros h4 {
+  color: #0dab01;
+  margin-top: 0.6rem;
+}
+
+.card--Nosotros:hover {
+  transform: none;
+}
+
+.form-control,
+.form-select {
+  border: none;
+  border-bottom: 0.1rem solid #b4b1db;
+  margin-bottom: 1rem;
+}
+
+.form-check-input,
+textarea.form-control {
+  border: 0.1rem solid #b4b1db;
+}
+
+/*# sourceMappingURL=style.css.map */
