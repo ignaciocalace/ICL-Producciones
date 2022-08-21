@@ -2,8 +2,13 @@ header {
   background-color: $colorprimario;
 }
 
-.navbar-brand img {
-  max-width: 25vh;
+.navbar-brand {
+  @media (max-width: 992px) {
+    margin-right: 0;
+  }
+  img {
+    max-width: 25vh;
+  }
 }
 
 .nav-item {
