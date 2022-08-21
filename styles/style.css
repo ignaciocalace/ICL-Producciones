@@ -1,6 +1,6 @@
 h2 {
-  font-family: "ethnocentric";
-  font-size: 3vmax;
+  font-family: ethnocentric, sans-serif;
+  font-size: 3.2vmax;
   margin-bottom: 0rem;
 }
 
@@ -58,6 +58,11 @@ header {
   background-color: #2c2955;
 }
 
+@media (max-width: 992px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
 .navbar-brand img {
   max-width: 25vh;
 }
