@@ -14,3 +14,10 @@
     transform: none;
   }
 }
+
+.card--Inicio {
+  @extend .card;
+  img {
+    max-width: 100px;
+  }
+}

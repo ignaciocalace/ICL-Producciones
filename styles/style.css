@@ -87,27 +87,31 @@ footer p {
   font-size: 0.9rem;
 }
 
-.card, .card--Nosotros {
+.card, .card--Inicio, .card--Nosotros {
   text-align: center;
   border-radius: 1rem;
   background-color: #f9f9f9;
 }
-.card:hover, .card--Nosotros:hover {
+.card:hover, .card--Inicio:hover, .card--Nosotros:hover {
   transform: scale(1.05);
 }
-.card img, .card--Nosotros img {
+.card img, .card--Inicio img, .card--Nosotros img {
   max-width: 100%;
 }
-.card p, .card--Nosotros p {
+.card p, .card--Inicio p, .card--Nosotros p {
   margin: 1rem 0;
 }
-.card h4, .card--Nosotros h4 {
+.card h4, .card--Inicio h4, .card--Nosotros h4 {
   color: #0dab01;
   margin-top: 0.6rem;
 }
 
 .card--Nosotros:hover {
   transform: none;
+}
+
+.card--Inicio img {
+  max-width: 100px;
 }
 
 .form-control,
